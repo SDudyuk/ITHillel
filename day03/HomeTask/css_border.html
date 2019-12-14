@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About tag/css</title>
+	<title>Свойство border</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head><p>
 <body>
-	
 	<div class="panel" id='tag_panel'>
 		<h1>Теги</h1>
 		<hr>
@@ -17,10 +16,9 @@
 		</ul>
 	</div>
 	<div class="panel" id='desc_panel'>
-		<h2>Свойство 'border'</h2>
+		<h2>border</h2>
 		<hr>
-
-
+		<h3>Поддержка браузерами</h3>
 		<table id="table_support">
 			<tbody>
 				<tr>
@@ -40,15 +38,29 @@
 			</tbody>
 		</table>
 		<h3>Описание</h3>
-
-
-
-
-
-
+		<p>
+			Универсальное свойство <span class="attribute">border</span> позволяет одновременно установить толщину, стиль и цвет границы вокруг элемента. Значения могут идти в любом порядке, разделяясь пробелом, браузер сам определит, какое из них соответствует нужному свойству. Для установки границы только на определенных сторонах элемента, воспользуйтесь свойствами <span class="attribute">border-top</span>, <span class="attribute">border-bottom</span>, <span class="attribute">border-left</span>, <span class="attribute">border-right</span>.
+		</p>
+		<h3>Синтаксис</h3>
+		<p class="example">
+			border: [border-width || border-style || border-color] | inherit
+		</p>
+		<h3>Значение</h3>
+		<p>
+			Значение <span class="attribute">border-width</span> определяет толщину границы. Для управления ее видом предоставляется несколько значений  <span class="attribute">border-style</span>. Их названия и результат действия:
+		</p>
+		<p class="tbl_img">
+			<img src="img/border_style.png" alt="Стили рамок" width="435" height="37">
+		</p>
+		<p>
+			<span class="attribute">border-color</span> устанавливает цвет границы, значение может быть в любом допустимом для CSS формате.
+		</p>
+		<p>
+			<span class="value">inherit</span> наследует значение родителя.
+		</p>
 	</div>
 	<div class="panel" id='style_panel'>
-		<h1>Свойства CSS</h1>
+		<h1>Свойства</h1>
 		<hr>
 		<ul>
 			<li><a href='css_margin.html'>margin</a></li>

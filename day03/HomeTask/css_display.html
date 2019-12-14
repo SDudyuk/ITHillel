@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About tag/css</title>
+	<title>Свойство display</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head><p>
 <body>
-	
 	<div class="panel" id='tag_panel'>
 		<h1>Теги</h1>
 		<hr>
@@ -16,10 +15,10 @@
 			<li><a href='tag_hr.html'>&lt;hr&gt;</a></li>
 		</ul>
 	</div>
-	
 	<div class="panel" id='desc_panel'>
-		<h1>Свойство 'display'</h1>
+		<h2>display</h2>
 		<hr>
+		<h3>Поддержка браузерами</h3>
 		<table id="table_support">
 			<tbody>
 				<tr>
@@ -39,15 +38,103 @@
 			</tbody>
 		</table>
 		<h3>Описание</h3>
-
-
-
-
-
+		<p>
+			Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.
+		</p>
+		<h3>Синтаксис</h3>
+		<p class="example">
+			display: block | inline | inline-block | inline-table | list-item | none | run-in | table | table-caption | table-cell | table-column-group | table-column | table-footer-group | table-header-group | table-row | table-row-group
+		</p>
+		<h3>Значения</h3>
+		<p>
+			Список возможных значений этого свойства, понимаемый разными браузерами очень короткий — <span class="value">block</span>, <span class="value">inline</span>, <span class="value">list-item</span> и <span class="value">none</span>. Все остальные допустимые значения поддерживаются браузерами выборочно.
+		</p>
+		<table class="data">
+  		<tbody>
+			<tr> 
+				<th>Значение</th>
+				<th>Описание</th>
+			</tr>
+			<tr>
+				<td class="sel">block</td>
+				<td>
+					Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега <span class="tag">&lt;span&gt;</span>, заставляет его вести подобно блокам&nbsp;— происходит перенос строк в начале и в конце содержимого.
+				</td>
+			</tr>
+			<tr>
+				<td class="sel">inline</td>
+				<td>
+					Элемент отображается как встроенный. Использование блочных тегов, таких как <span class="tag">&lt;div&gt;</span> и <span class="tag">&lt;p&gt;</span>, автоматически создает перенос и показывает содержимое этих тегов с новой строки. Значение <span class="value">inline</span> отменяет эту особенность, поэтому содержимое блочных элементов начинается с того места, где окончился предыдущий элемент.
+				</td>
+			</tr>
+			<tr>
+				<td class="sel">inline-block</td>
+				<td>
+					Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу. Фактически такой элемент по своему действию похож на встраиваемые элементы (вроде тега <span class="tag"> &lt;img&gt;</span>). При этом его внутренняя часть форматируется как блочный элемент, а сам элемент&nbsp;— как встроенный.
+				</td>
+			</tr>
+			<tr>
+				<td class="sel">inline-table</td>
+				<td>
+					Определяет, что элемент является таблицей как при использовании тега <span class="tag">&lt;table&gt;</span>, но при этом таблица является встроенным элементом и происходит ее обтекание другими элементами, например, текстом.
+				</td>
+    		</tr>
+  			<tr>
+    			<td class="sel">list-item</td>
+    			<td>Элемент выводится как блочный и добавляется маркер списка.</td>
+			</tr>
+			<tr>
+				<td class="sel">none</td>
+				<td>
+					Временно удаляет элемент из документа. Занимаемое им место не резервируется и веб-страница формируется так, словно элемента и не было. Изменить значение  и сделать вновь видимым элемент можно с помощью скриптов, обращаясь к свойствам через объектную модель. В этом случае происходит переформатирование данных на странице с учетом вновь добавленного элемента.
+				</td>
+			</tr>
+			<tr>
+				<td class="sel">run-in</td>
+				<td>Устанавливает элемент как блочный или встроенный в зависимости от контекста.</td>
+			</tr>
+			<tr>
+				<td class="sel">table</td>
+				<td>Определяет, что элемент является блочной таблицей подобно использованию тега <span class="tag">&lt;table&gt;</span>.</td>
+			</tr>
+			<tr>
+				<td class="sel">table-caption</td>
+				<td>Задает заголовок таблицы подобно применению тега <span class="tag">&lt;caption&gt;</span>.    </td>
+			</tr>
+			<tr>
+				<td class="sel">table-cell</td>
+				<td>Указывает, что элемент представляет собой ячейку таблицы (тег <span class="tag">&lt;td&gt;</span> или <span class="tag">&lt;th&gt;</span>).</td>
+			</tr>
+			<tr>
+ 				<td class="sel">table-column</td>
+				<td>Назначает элемент колонкой таблицы, словно был добавлен тег <span class="tag"> &lt;col&gt;</span>.</td>
+			</tr>
+			<tr>
+				<td class="sel">table-column-group</td>
+				<td>Определяет, что элемент является группой одной или более колонок таблицы, как при использовании тега <span class="tag">&lt;colgroup&gt;</span>.</td>
+			</tr>
+			<tr>
+				<td class="sel">table-footer-group</td>
+				<td>Используется для хранения одной или нескольких строк ячеек, которые отображаются в самом низу таблицы. По своему действию сходно с работой тега <span class="tag">&lt;tfoot&gt;</span>.</td>
+			</tr>
+			<tr>
+				<td class="sel">table-header-group</td>
+				<td>Элемент предназначен для хранения одной или нескольких строк ячеек, которые представлены вверху таблицы. По своему действию сходно с работой тега <span class="tag">&lt;thead&gt;</span>. </td>
+			</tr>
+			<tr>
+				<td class="sel">table-row</td>
+				<td>Элемент отображается как строка таблицы (тег <span class="tag">&lt;tr&gt;</span>).</td>
+			</tr>
+			<tr>
+				<td class="sel">table-row-group</td>
+				<td>Создает структурный блок, состоящий из нескольких строк таблицы аналогично действию тега <span class="tag">&lt;tbody&gt;</span>. </td>
+			</tr>
+		</tbody>
+		</table>
 	</div>
 
 	<div class="panel" id='style_panel'>
-		<h1>Свойства CSS</h1>
+		<h1>Свойства</h1>
 		<hr>
 		<ul>
 			<li><a href='css_margin.html'>margin</a></li>

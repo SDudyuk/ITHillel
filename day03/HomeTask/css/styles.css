@@ -1,7 +1,31 @@
-body{
-	width: 100%;
+.panel{
+	display: inline-block;
+	box-sizing: border-box;
+	--height: 980px;
+	--height: 100%;
+	padding: 20px;
+	vertical-align: top;
+}
+#tag_panel{
+	width: 19%;
+	height: 300px;
+	--height: 100%;
+	background-color: #1E90FF;
+	display: inline-block;
+}
+#desc_panel{
+	width: 60%;
 	height: 100%;
-	--margin: 0;
+	--height: 550px;
+	background-color: #87CEFA;
+	display: inline-block;
+}
+#style_panel{
+	width: 19%;
+	height: 300px;
+	--height: 100%;
+	background-color: #1E90FF;
+	display: inline-block;
 }
 h1{
 	text-align: center;
@@ -15,33 +39,6 @@ li{
 	margin: 10px;
 	font-weight: bold;
 	font-size: 20px;
-}
-.panel{
-	display: inline-block;
-	box-sizing: border-box;
-	height: 850px;
-	--height: 100%;
-	padding: 20px;
-	vertical-align: top;
-}
-#tag_panel{
-	width: 19%;
-	--height: 550px;
-	background-color: #1E90FF;
-	display: inline-block;
-}
-#desc_panel{
-	width: 60%;
-	--height: 100%;
-	--height: 550px;
-	background-color: #87CEFA;
-	display: inline-block;
-}
-#style_panel{
-	width: 19%;
-	--height: 550px;
-	background-color: #1E90FF;
-	display: inline-block;
 }
 #table_support, td{
 	--width: 100%;
@@ -81,16 +78,6 @@ li{
 	width: 100px;
 	height: 25px;	
 }
-.tag{
-	font-family: "Courier New", Courier, mono;
-    color: #069;
-    font-weight: bold;
-}
-.attribute {
-    color: #b61039;
-    font-weight: normal;
-    font-weight: bold;
-}
 p {
 	margin-left: 30px;
 }
@@ -100,7 +87,6 @@ p {
 }
 .attr_name{
 	display: inline-block;
-	
 	width: 80px;
 }
 .attr_desc{
@@ -108,4 +94,65 @@ p {
 }
 .attr_name a{
 	font-style: italic;
+}
+pre {
+	margin-left: 30px;
+	background: #e3e7f6;
+	padding: 10px;
+}
+pre .doctype {
+    color: #069;
+}
+pre code {
+    display: block;
+    overflow: auto;
+	font: 14px "Courier New";
+}
+.tag {
+	font-family: "Courier New";
+    color: #069;
+    font-size: 1em;
+    font-weight: bold;
+}
+.tag .keyword{
+	font-family: "Courier New", Courier, mono;
+    color: #069;
+    font-weight: bold;
+}
+.attribute {
+    color: #b61039;
+    font-weight: normal;
+}
+.value {
+    color: #39892f;
+    font-weight: normal;
+}
+.example {
+	font: 14px "Courier New";
+	padding: 7px;
+	tab-size: 4;
+	background: #f8f7f2;
+}
+table.data {
+    border-collapse: collapse;
+    margin: 0.3em auto 0.5em;
+    width: 90%;
+}
+table {
+	border-spacing: 2px;
+	border-color: grey;
+}
+.sel {
+	background: #f6f6f0;
+}
+.data td, .data th {
+    border: 1px solid #333;
+    padding: 4px;
+}
+th {
+    background: #bfbfbf;
+    font-size: 0.9em;
+}
+.tbl_img {
+    text-align: center;
 }

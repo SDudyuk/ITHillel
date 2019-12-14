@@ -15,9 +15,11 @@
 			<li><a href='tag_hr.html'>&lt;hr&gt;</a></li>
 		</ul>
 	</div>
+
 	<div class="panel" id='desc_panel'>
 		<h2>Тег &lt;button&gt;</h2>
 		<hr>
+		<h3>Поддержка браузерами</h3>
 		<table id="table_support">
 			<tbody>
 				<tr>
@@ -40,6 +42,10 @@
 		<p>
 			Тег <span class="tag">&lt;button&gt;</span> создает на веб-странице кнопки и по своему действию напоминает результат, получаемый с помощью тега <span class="tag">&lt;input&gt;</span> (с атрибутом <span class="var">type="button | reset | submit"</span>). В отличие от этого тега, <span class="tag">&lt;button&gt;</span> предлагает расширенные возможности по созданию кнопок. Например, на подобной кнопке можно размещать любые элементы HTML, в том числе изображения. Используя стили можно определить вид кнопки путем изменения шрифта, цвета фона, размеров и других параметров.
 		</p>
+		<h3>Синтаксис</h3>
+		<pre><code><span class="tag">&lt;<span class="keyword">form</span>&gt;</span>
+    <span class="tag">&lt;<span class="keyword">button</span>&gt;</span>...<span class="tag">&lt;/<span class="keyword">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="keyword">form</span>&gt;</span></code></pre>
 		<h3>Атрибуты</h3>
 		<div class="attr">
 			<div class="attr_name">
@@ -81,9 +87,22 @@
 				Значение кнопки, которое будет отправлено на сервер или прочитано с помощью скриптов.
 			</div>
 		</div>
+		<h3>Пример</h3>
+		<pre><code class=" html"><span class="doctype">&lt;!DOCTYPE HTML&gt;</span>
+<span class="tag">&lt;<span class="keyword">html</span>&gt;</span>
+    <span class="tag">&lt;<span class="keyword">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="keyword">title</span>&gt;</span>Тег BUTTON<span class="tag">&lt;/<span class="keyword">title</span>&gt;</span>
+ <span class="tag">&lt;/<span class="keyword">head</span>&gt;</span>
+ <span class="tag">&lt;<span class="keyword">body</span>&gt;</span>
+  <span class="tag">&lt;<span class="keyword">p</span><span class="attribute"> style=<span class="value">"text-align: center"</span></span>&gt;</span>
+      <span class="tag">&lt;<span class="keyword">button</span>&gt;</span>Кнопка<span class="tag">&lt;/<span class="keyword">button</span>&gt;</span>
+  <span class="tag">&lt;/<span class="keyword">p</span>&gt;</span>
+ <span class="tag">&lt;/<span class="keyword">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="keyword">html</span>&gt;</span></code></pre>
 	</div>
+
 	<div class="panel" id='style_panel'>
-		<h1>Свойства CSS</h1>
+		<h1>Свойства</h1>
 		<hr>
 		<ul>
 			<li><a href='css_margin.html'>margin</a></li>

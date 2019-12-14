@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	
 	<div class="panel" id='tag_panel'>
 		<h1>Теги</h1>
 		<hr>
@@ -19,6 +18,7 @@
 	<div class="panel" id='desc_panel'>
 		<h2>Тег &lt;div&gt;</h2>
 		<hr>
+		<h3>Поддержка браузерами</h3>
 		<table id="table_support">
 			<tbody>
 				<tr>
@@ -44,6 +44,8 @@
 		<p>
 			Как и при использовании других блочных элементов, содержимое тега <span class="tag">&lt;div&gt; </span> всегда начинается с новой строки. После него также добавляется перенос строки.
 		</p>
+		<h3>Синтаксис</h3>
+		<pre><code><span class="tag">&lt;div&gt;</span>...<span class="tag">&lt;/div&gt;</span></code></pre>
 		<h3>Атрибуты</h3>
 		<div class="attr">
 			<div class="attr_name">
@@ -53,7 +55,6 @@
 				Задает выравнивание содержимого тега <span class="tag">&lt;div&gt;</span>.
 			</div>
 		</div>
-
 		<div class="attr">
 			<div class="attr_name">
 				<a href="http://htmlbook.ru/html/div/title">title</a>
@@ -62,9 +63,31 @@
 				Добавляет всплывающую подсказку к содержимому.<span class="tag">&lt;div&gt;</span>.
 			</div>
 		</div>
+
+
+		<h3>Пример</h3>
+		<pre><code class=" html"><span class="doctype">&lt;!DOCTYPE HTML&gt;</span>
+<span class="tag">&lt;<span class="keyword">html</span>&gt;</span>
+<span class="tag">&lt;<span class="keyword">head</span>&gt;</span>
+	<span class="tag">&lt;<span class="keyword">title</span>&gt;</span>Тег DIV<span class="tag">&lt;/<span class="keyword">title</span>&gt;</span>
+	<span class="tag">&lt;<span class="keyword">style</span><span class="attribute"> type=<span class="value">"text/css"</span></span>&gt;</span>
+		.div_class {
+			<span class="attribute">width</span>: <span class="value">200px</span>;
+			<span class="attribute">background</span>: <span class="value">#ccc</span>;
+		}
+	<span class="tag">&lt;/<span class="keyword">style</span></span>
+<span class="tag">&lt;/<span class="keyword">head</span>&gt;</span>
+<span class="tag">&lt;<span class="keyword">body</span>&gt;</span>
+	<span class="tag">&lt;<span class="keyword">div</span><span class="attribute"> class=<span class="value">"div_class"</span></span>&gt;</span>
+    		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+	<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="keyword">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="keyword">html</span>&gt;</span></code></pre>
+
+
 	</div>
 	<div class="panel" id='style_panel'>
-		<h1>Свойства CSS</h1>
+		<h1>Свойства</h1>
 		<hr>
 		<ul>
 			<li><a href='css_margin.html'>margin</a></li>
